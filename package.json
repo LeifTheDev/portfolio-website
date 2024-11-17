@@ -1,0 +1,17 @@
+{
+    "name": "portfolio-website",
+    "version": "0.1.0",
+    "main": "index.html",
+    "scripts": {
+        "build": "npx tailwindcss -i ./assets/css/site.css -o ./assets/css/build.css --watch"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "",
+    "description": "",
+    "devDependencies": {
+        "autoprefixer": "^10.4.20",
+        "postcss": "^8.4.49",
+        "tailwindcss": "^3.4.15"
+    }
+}
