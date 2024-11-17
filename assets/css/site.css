@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --background-colour: #eeadad;
+    --border-colour: #ff0000;
+    --content-background: #e5e5e5;
+}
+
+.header {
+    background-color: var(--background-colour);
+    @apply flex justify-between p-4;
+}
