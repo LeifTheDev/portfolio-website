@@ -29,3 +29,8 @@
 .navitem:hover {
     color: var(--border-colour);
 }
+
+.menu-icon {
+    background-color: var(--background-colour);
+    @apply md:hidden max-h-5 m-5;
+}
