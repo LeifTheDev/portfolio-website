@@ -10,7 +10,7 @@
 
 .header {
     background-color: var(--background-colour);
-    @apply flex justify-between md:p-4 shadow-lg;
+    @apply flex justify-between md:p-4 shadow-lg sticky z-10;
 }
 
 .header h1 {
@@ -32,7 +32,7 @@
 
 .menu-icon {
     background-color: var(--background-colour);
-    @apply hidden max-h-5 m-5;
+    @apply md:hidden max-h-5 m-5;
 }
 
 .main-content {
