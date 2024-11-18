@@ -650,8 +650,16 @@ video {
   display: none;
 }
 
+.max-h-20 {
+  max-height: 5rem;
+}
+
 .max-h-5 {
   max-height: 1.25rem;
+}
+
+.max-h-96 {
+  max-height: 24rem;
 }
 
 .w-screen {
@@ -680,12 +688,40 @@ video {
   scroll-margin-bottom: -9rem;
 }
 
+.place-content-start {
+  place-content: start;
+}
+
+.place-items-center {
+  place-items: center;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-stretch {
+  align-items: stretch;
+}
+
 .justify-center {
   justify-content: center;
 }
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.self-center {
+  align-self: center;
 }
 
 .text-wrap {
