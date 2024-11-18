@@ -13,12 +13,19 @@
     @apply flex justify-between p-4;
 }
 
+.header h1 {
+    @apply invisible md:visible;
+}
+
 .navbar {
     background-color: var(--background-colour);
-    @apply flex justify-between p-4 md:hidden;
+    @apply flex justify-between invisible md:visible;
 }
 
 .navitem {
     background-color: var(--background-colour);
-    @apply hover:bg-gray-300 px-4 py-2;
+}
+
+.navitem:hover {
+    color: var(--border-colour);
 }

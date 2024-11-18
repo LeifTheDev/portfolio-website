@@ -570,3 +570,34 @@ video {
   justify-content: space-between;
   padding: 1rem;
 }
+
+.header h1 {
+  visibility: hidden;
+}
+
+@media (min-width: 768px) {
+  .header h1 {
+    visibility: visible;
+  }
+}
+
+.navbar {
+  background-color: var(--background-colour);
+  visibility: hidden;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    visibility: visible;
+  }
+}
+
+.navitem {
+  background-color: var(--background-colour);
+}
+
+.navitem:hover {
+  color: var(--border-colour);
+}
