@@ -10,7 +10,7 @@
 
 .header {
     background-color: var(--background-colour);
-    @apply flex justify-between md:p-4 shadow-lg sticky z-10;
+    @apply flex justify-between md:p-4 shadow-lg fixed w-screen top-0;
 }
 
 .header h1 {
@@ -37,7 +37,7 @@
 
 .main-content {
     min-height: 90vh;
-    @apply p-4;
+    @apply p-4 mt-12;
 }
 
 .home-biography {
