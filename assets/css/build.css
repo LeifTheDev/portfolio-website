@@ -638,6 +638,10 @@ video {
   display: table;
 }
 
+.grid {
+  display: grid;
+}
+
 .contents {
   display: contents;
 }
@@ -682,6 +686,10 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.text-wrap {
+  text-wrap: wrap;
 }
 
 .border {
