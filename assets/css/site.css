@@ -34,3 +34,15 @@
     background-color: var(--background-colour);
     @apply md:hidden max-h-5 m-5;
 }
+
+.main-content {
+    background-color: var(--content-background);
+    min-height: 90vh;
+    @apply p-4;
+}
+
+.footer {
+    background-color: var(--background-colour);
+    margin-top: -10vh;
+    @apply flex justify-center text-center p-4 bottom-0 w-screen absolute;
+}
