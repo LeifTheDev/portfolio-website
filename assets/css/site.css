@@ -10,7 +10,7 @@
 
 .header {
     background-color: var(--background-colour);
-    @apply flex justify-between p-4;
+    @apply flex justify-between md:p-4 shadow-lg;
 }
 
 .header h1 {
