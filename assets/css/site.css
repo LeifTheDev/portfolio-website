@@ -32,13 +32,23 @@
 
 .menu-icon {
     background-color: var(--background-colour);
-    @apply md:hidden max-h-5 m-5;
+    @apply hidden max-h-5 m-5;
 }
 
 .main-content {
     background-color: var(--content-background);
     min-height: 90vh;
     @apply p-4;
+}
+
+.home-biography {
+    background-color: var(--content-background);
+    @apply flex place-items-center justify-around text-left;
+}
+
+.profile-picture {
+    background-color: var(--background-colour);
+    @apply max-sm:hidden max-h-64;
 }
 
 .footer {

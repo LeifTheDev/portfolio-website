@@ -821,19 +821,33 @@ video {
 .menu-icon {
   background-color: var(--background-colour);
   margin: 1.25rem;
+  display: none;
   max-height: 1.25rem;
-}
-
-@media (min-width: 768px) {
-  .menu-icon {
-    display: none;
-  }
 }
 
 .main-content {
   background-color: var(--content-background);
   min-height: 90vh;
   padding: 1rem;
+}
+
+.home-biography {
+  background-color: var(--content-background);
+  display: flex;
+  place-items: center;
+  justify-content: space-around;
+  text-align: left;
+}
+
+.profile-picture {
+  background-color: var(--background-colour);
+  max-height: 16rem;
+}
+
+@media not all and (min-width: 640px) {
+  .profile-picture {
+    display: none;
+  }
 }
 
 .footer {
@@ -848,13 +862,15 @@ video {
   text-align: center;
 }
 
+@media not all and (min-width: 640px) {
+  .max-sm\:hidden {
+    display: none;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:visible {
     visibility: visible;
-  }
-
-  .md\:hidden {
-    display: none;
   }
 
   .md\:p-4 {
