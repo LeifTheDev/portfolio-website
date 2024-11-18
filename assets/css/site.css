@@ -36,19 +36,44 @@
 }
 
 .main-content {
-    background-color: var(--content-background);
     min-height: 90vh;
     @apply p-4;
 }
 
 .home-biography {
-    background-color: var(--content-background);
     @apply flex place-items-center justify-around text-left;
 }
 
 .profile-picture {
-    background-color: var(--background-colour);
     @apply max-sm:hidden max-h-64;
+}
+
+.dashboard {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-4 p-4;
+}
+
+.dashboard-item {
+    background-color: var(--content-background);
+    border-color: var(--border-colour);
+    border-style: solid;
+    border-width: 1px;
+    @apply min-h-40 min-w-60;
+}
+
+.dashboard-item-title {
+    background-color: var(--background-colour);
+    border-color: var(--border-colour);
+    border-style: solid;
+    border-width: 1px;
+    @apply p-2 max-w-60;
+}
+
+.dashboard-item-description {
+    background-color: var(--content-background);
+    border-color: var(--border-colour);
+    border-style: solid;
+    border-width: 1px;
+    @apply p-2 min-h-40 min-w-60;
 }
 
 .footer {
