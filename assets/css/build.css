@@ -702,6 +702,14 @@ video {
   min-height: 10rem;
 }
 
+.w-1 {
+  width: 0.25rem;
+}
+
+.w-1\/6 {
+  width: 16.666667%;
+}
+
 .w-3 {
   width: 0.75rem;
 }
@@ -716,6 +724,10 @@ video {
 
 .w-screen {
   width: 100vw;
+}
+
+.min-w-52 {
+  min-width: 13rem;
 }
 
 .min-w-60 {
@@ -832,6 +844,10 @@ video {
 
 .text-wrap {
   text-wrap: wrap;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
 .border {
@@ -1092,6 +1108,7 @@ video {
   border-color: black;
   border-bottom-width: 1px;
   padding: 2px;
+  height: 5%;
 }
 
 .form-input-medium {
@@ -1101,6 +1118,20 @@ video {
 
 .form-input-large {
   height: 40%;
+}
+
+.form-button {
+  width: 16.666667%;
+  min-width: 13rem;
+  align-self: center;
+  border-radius: 0.5rem;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  background-color: #8adc5e;
+  margin-top: 2.5vb;
+  min-height: 10px;
+  height: 3vb;
 }
 
 .footer {

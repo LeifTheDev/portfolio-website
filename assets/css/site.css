@@ -110,6 +110,7 @@
     border-color: black;
     border-bottom-width: 1px;
     padding: 2px;
+    height: 5%;
 }
 
 .form-input-medium {
@@ -119,6 +120,17 @@
 
 .form-input-large {
     @apply h-2/5;
+}
+
+.form-button {
+    @apply rounded-lg w-1/6 min-w-52 self-center;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    background-color: #8adc5e;
+    margin-top: 2.5vb;
+    min-height: 10px;
+    height: 3vb;
 }
 
 .footer {

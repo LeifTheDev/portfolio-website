@@ -31,18 +31,18 @@
     <main class="main-content">
         <form class="form">
             <label class="form-label" for="contact-email">Email*</label>
-            <input class="form-input" type="email" name="contact-email" id="contact-email"
-                placeholder="Enter your contact email" required>
+            <textarea class="form-input" type="text" name="contact-email" id="contact-email"
+                placeholder="Enter your contact email"></textarea>
             <label class="form-label" for="contact-phone">Phone*</label>
             <input class="form-input" type="tel" name="contact-phone" id="contact-phone"
-                placeholder="Enter your phone number" required>
+                placeholder="Enter your phone number">
             <label class="form-label" for="subject">Subject*</label>
             <textarea class="form-input form-input-medium" name="subject" id="subject"
-                placeholder="What do you want to talk about" required maxlength="64"></textarea>
+                placeholder="What do you want to talk about" maxlength="64"></textarea>
             <label class="form-label" for="subject">Message*</label>
-            <textarea class="form-input form-input-large" name="message" id="message" placeholder="What is your message"
-                required></textarea>
-            <input type="submit">
+            <textarea class="form-input form-input-large" name="message" id="message"
+                placeholder="What is your message"></textarea>
+            <button class="form-button" type="submit">Send</button>
         </form>
     </main>
     <footer class="footer">
