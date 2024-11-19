@@ -29,12 +29,26 @@
         </nav>
     </header>
     <main class="main-content">
-
+        <form class="form">
+            <label class="form-label" for="contact-email">Email*</label>
+            <input class="form-input" type="email" name="contact-email" id="contact-email"
+                placeholder="Enter your contact email" required>
+            <label class="form-label" for="contact-phone">Phone*</label>
+            <input class="form-input" type="tel" name="contact-phone" id="contact-phone"
+                placeholder="Enter your phone number" required>
+            <label class="form-label" for="subject">Subject*</label>
+            <textarea class="form-input form-input-medium" name="subject" id="subject"
+                placeholder="What do you want to talk about" required maxlength="64"></textarea>
+            <label class="form-label" for="subject">Message*</label>
+            <textarea class="form-input form-input-large" name="message" id="message" placeholder="What is your message"
+                required></textarea>
+            <input type="submit">
+        </form>
     </main>
     <footer class="footer">
         <p>&copy Leif, 2024 </p>
     </footer>
-    <script src="./assets/js/home_scripts.js"></script>
+    <script src="./assets/js/contact_scripts.js"></script>
 </body>
 
 </html>
