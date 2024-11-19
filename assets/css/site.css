@@ -90,7 +90,7 @@
 }
 
 .form {
-    @apply shadow-lg w-3/4 border-black self-center m-auto flex flex-col;
+    @apply shadow-sm shadow-black w-3/4 border-black self-center m-auto flex flex-col;
     margin-top: 5vb;
     margin-bottom: 5vb;
     border-style: solid;
@@ -99,7 +99,7 @@
 }
 
 .form-label {
-    @apply bg-gray-300 w-full text-center font-semibold;
+    @apply bg-gray-300 w-full md:text-center pl-1 md:p-0 font-semibold;
     border-style: solid;
     border-bottom-width: 1px;
 }
