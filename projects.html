@@ -15,7 +15,8 @@
         <img src="./assets/img/bars-solid.svg" alt="Menu" class="menu-icon">
         <h1>Home</h1>
         <nav class="navbar">
-            <ul>
+            <section>
+                <h2 hidden>Navigation</h2>
                 <a href="./about.html" class="navitem">About Me</a>
                 |
                 <a href="./resume.html" class="navitem">Resume</a>
@@ -25,58 +26,64 @@
                 <a href="./contact.html" class="navitem">Contact Form</a>
                 |
                 <a href="./sample_project.html" class="navitem">Sample Project</a>
-            </ul>
+            </section>
         </nav>
     </header>
     <main class="main-content">
         <section class="dark-background-container" hidden>
+            <h2 hidden>Dark Background Container</h2>
             <article class="popup" hidden>
-                <h2 class="popup-title">Title
+                <h2 class="popup-title" id="popup-title">Title
                 </h2>
-                <p class="popup-description">Description</p>
+                <p class="popup-description" id="popup-description">Description</p>
                 <h3 class="project-technology-used-title">Technologies Used</h3>
-                <ui class="project-technology-used-list"></ui>
-                <button class="project-visit-github-button"></button>
+                <section class="project-technology-used-list" id="project-technology-used-list">
+                    <h2 hidden>Placeholder Technology</h2>
+                </section>
+                <button class="project-visit-github-button" id="project-visit-github-button"></button>
             </article>
         </section>
         <section class="dashboard">
+            <h2 hidden>Dashboard</h2>
             <article class="dashboard-item" id="meme-app-card">
-                <h1 class="dashboard-item-title">Meme App</h1>
+                <h2 class="dashboard-item-title">Meme App</h2>
                 <p class="dashboard-item-description">A MAUI app that uses two api's to generate memes.</p>
-                <ul hidden id="wordle-solver-technologies">
-                    <li>C#</li>
-                    <li>Figma</li>
-                    <li>Git</li>
-                    <li>MAUI Framework</li>
-                </ul>
+                <section hidden id="meme-app-technologies">
+                    <h2>C#</h2>
+                    <h2>Figma</h2>
+                    <h2>Git</h2>
+                    <h2>MAUI Framework</h2>
+                </section>
+                <a href="https://github.com/LB-TAFE/CertIVMobileProject"></a>
             </article>
             <article class="dashboard-item" id="portfolio-website-card">
-                <h1 class="dashboard-item-title">Portfolio Website</h1>
+                <h2 class="dashboard-item-title">Portfolio Website</h2>
                 <p class="dashboard-item-description">This website! Here, I tell you about me, my
                     experience/qualifications and all of the cool stuff I've done.</p>
-                <ul hidden id="portfolio-website-technologies">
-                    <li>CSS</li>
-                    <li>Git</li>
-                    <li>HTML</li>
-                    <li>Javascript</li>
-                    <li>Tailwind</li>
-                </ul>
+                <section hidden id="portfolio-website-technologies">
+                    <h2>CSS</h2>
+                    <h2>Git</h2>
+                    <h2>HTML</h2>
+                    <h2>Javascript</h2>
+                    <h2>Tailwind</h2>
+                </section>
+                <a href="https://github.com/LB-TAFE/portfolio-website"></a>
             </article>
             <article class="dashboard-item" id="wordle-solver-card">
-                <h1 class="dashboard-item-title">Wordle Solver</h1>
+                <h2 class="dashboard-item-title">Wordle Solver</h2>
                 <p class="dashboard-item-description">A simple command-line tool to help solve Wordle that uses a
                     mock
                     Wordle engine to test its accuracy.</p>
-                <ul hidden id="wordle-solver-technologies">
-                    <li>Git</li>
-                    <li>Python</li>
-                </ul>
+                <section hidden id="wordle-solver-technologies">
+                    <h2>Git</h2>
+                    <h2>Python</h2>
+                </section>
             </article>
 
         </section>
     </main>
     <footer class="footer">
-        <p>&copy Leif, 2024 </p>
+        <p>&copy; Leif, 2024 </p>
     </footer>
     <script src="./assets/js/projects_scripts.js"></script>
 </body>
