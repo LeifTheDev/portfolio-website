@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Projects</title>
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/fontawesome.css">
     <link rel="stylesheet" href="./assets/css/build.css">
@@ -29,7 +29,51 @@
         </nav>
     </header>
     <main class="main-content">
+        <section class="dark-background-container" hidden>
+            <article class="popup" hidden>
+                <h2 class="popup-title">Title
+                </h2>
+                <p class="popup-description">Description</p>
+                <h3 class="project-technology-used-title">Technologies Used</h3>
+                <ui class="project-technology-used-list"></ui>
+                <button class="project-visit-github-button"></button>
+            </article>
+        </section>
+        <section class="dashboard">
+            <article class="dashboard-item" id="meme-app-card">
+                <h1 class="dashboard-item-title">Meme App</h1>
+                <p class="dashboard-item-description">A MAUI app that uses two api's to generate memes.</p>
+                <ul hidden id="wordle-solver-technologies">
+                    <li>C#</li>
+                    <li>Figma</li>
+                    <li>Git</li>
+                    <li>MAUI Framework</li>
+                </ul>
+            </article>
+            <article class="dashboard-item" id="portfolio-website-card">
+                <h1 class="dashboard-item-title">Portfolio Website</h1>
+                <p class="dashboard-item-description">This website! Here, I tell you about me, my
+                    experience/qualifications and all of the cool stuff I've done.</p>
+                <ul hidden id="portfolio-website-technologies">
+                    <li>CSS</li>
+                    <li>Git</li>
+                    <li>HTML</li>
+                    <li>Javascript</li>
+                    <li>Tailwind</li>
+                </ul>
+            </article>
+            <article class="dashboard-item" id="wordle-solver-card">
+                <h1 class="dashboard-item-title">Wordle Solver</h1>
+                <p class="dashboard-item-description">A simple command-line tool to help solve Wordle that uses a
+                    mock
+                    Wordle engine to test its accuracy.</p>
+                <ul hidden id="wordle-solver-technologies">
+                    <li>Git</li>
+                    <li>Python</li>
+                </ul>
+            </article>
 
+        </section>
     </main>
     <footer class="footer">
         <p>&copy Leif, 2024 </p>

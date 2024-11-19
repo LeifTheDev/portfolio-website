@@ -642,6 +642,10 @@ video {
   margin-bottom: -9rem;
 }
 
+.mt-12 {
+  margin-top: 3rem;
+}
+
 .mt-20 {
   margin-top: 5rem;
 }
@@ -1033,7 +1037,7 @@ video {
 .main-content {
   min-height: 90vh;
   margin-top: 3rem;
-  padding: 1rem;
+  padding-top: 0.5rem;
 }
 
 .home-biography {
@@ -1108,6 +1112,15 @@ video {
   min-height: 8rem;
   min-width: 15rem;
   padding: 0.5rem;
+}
+
+.dark-background-container {
+  background: black;
+  opacity: 75%;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
 }
 
 .form {
