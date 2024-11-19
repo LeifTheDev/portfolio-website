@@ -5,9 +5,10 @@ let popupDescription = document.getElementById("popup-description");
 let projectTechnologiesList = document.getElementById(
     "project-technology-used-list"
 );
+let projectLink = document.getElementById("project-visit-github-link");
 let darkBackground = document.getElementById("dark-background");
 
-function showPopup(title, description, technologiesList) {
+function showPopup(title, description, technologiesList, link) {
     popupTitle.innerText = title;
     popupDescription.innerText = description;
     projectTechnologiesList.innerHTML = "";
@@ -16,6 +17,7 @@ function showPopup(title, description, technologiesList) {
         technologyElement.innerText = technology;
         projectTechnologiesList.appendChild(technologyElement);
     });
+    projectLink.href = link;
     popupContainer.hidden = false;
     darkBackground.hidden = false;
 }
@@ -30,7 +32,9 @@ function projectButtonClicked(project) {
     technologiesListElements.forEach((technology) => {
         technologiesList.push(technology.innerText);
     });
-    showPopup(title, description, technologiesList);
+    const link = project.querySelector("a").href;
+    console.log(link);
+    showPopup(title, description, technologiesList, link);
 }
 
 document.addEventListener("click", (event) => {

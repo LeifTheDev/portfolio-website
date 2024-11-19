@@ -1243,7 +1243,7 @@ video {
   margin-bottom: 10%;
 }
 
-.project-visit-github-button {
+.project-visit-github-link {
   background-color: var(--background-colour);
   width: 100%;
   padding: 1%;
