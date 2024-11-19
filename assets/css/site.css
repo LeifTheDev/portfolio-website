@@ -61,7 +61,7 @@
     border-color: var(--border-colour);
     border-style: solid;
     border-width: 1px;
-    @apply min-h-32 min-w-60;
+    @apply min-h-32 min-w-60 hover:shadow-lg drop-shadow-lg;
 }
 
 .dashboard-item-title {
