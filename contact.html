@@ -4,11 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Form</title>
+    <title>Home</title>
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/fontawesome.css">
+    <link rel="stylesheet" href="./assets/css/build.css">
 </head>
 
 <body>
-    <p>Contact Form</p>
+    <header class="header">
+        <img src="./assets/img/bars-solid.svg" alt="Menu" class="menu-icon">
+        <h1>Home</h1>
+        <nav class="navbar">
+            <ul>
+                <a href="./about.html" class="navitem">About Me</a>
+                |
+                <a href="./resume.html" class="navitem">Resume</a>
+                |
+                <a href="./projects.html" class="navitem">Projects</a>
+                |
+                <a href="./contact.html" class="navitem">Contact Form</a>
+                |
+                <a href="./sample_project.html" class="navitem">Sample Project</a>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-content">
+        <form class="form">
+            <label class="form-label" for="contact-email">Email*</label>
+            <textarea class="form-input" type="text" name="contact-email" id="contact-email"
+                placeholder="Enter your contact email"></textarea>
+            <label class="form-label" for="contact-phone">Phone*</label>
+            <input class="form-input" type="tel" name="contact-phone" id="contact-phone"
+                placeholder="Enter your phone number">
+            <label class="form-label" for="subject">Subject*</label>
+            <textarea class="form-input form-input-medium" name="subject" id="subject"
+                placeholder="What do you want to talk about" maxlength="64"></textarea>
+            <label class="form-label" for="subject">Message*</label>
+            <textarea class="form-input form-input-large" name="message" id="message"
+                placeholder="What is your message"></textarea>
+            <button class="form-button" type="submit">Send</button>
+        </form>
+    </main>
+    <footer class="footer">
+        <p>&copy Leif, 2024 </p>
+    </footer>
+    <script src="./assets/js/contact_scripts.js"></script>
 </body>
 
 </html>

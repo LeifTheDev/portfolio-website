@@ -618,6 +618,10 @@ video {
   margin: -1.25rem;
 }
 
+.m-auto {
+  margin: auto;
+}
+
 .-my-10 {
   margin-top: -2.5rem;
   margin-bottom: -2.5rem;
@@ -670,6 +674,10 @@ video {
   display: none;
 }
 
+.h-4 {
+  height: 1rem;
+}
+
 .max-h-20 {
   max-height: 5rem;
 }
@@ -694,8 +702,32 @@ video {
   min-height: 10rem;
 }
 
+.w-1 {
+  width: 0.25rem;
+}
+
+.w-1\/6 {
+  width: 16.666667%;
+}
+
+.w-3 {
+  width: 0.75rem;
+}
+
+.w-3\/4 {
+  width: 75%;
+}
+
+.w-full {
+  width: 100%;
+}
+
 .w-screen {
   width: 100vw;
+}
+
+.min-w-52 {
+  min-width: 13rem;
 }
 
 .min-w-60 {
@@ -704,6 +736,12 @@ video {
 
 .border-collapse {
   border-collapse: collapse;
+}
+
+.border-spacing-2 {
+  --tw-border-spacing-x: 0.5rem;
+  --tw-border-spacing-y: 0.5rem;
+  border-spacing: var(--tw-border-spacing-x) var(--tw-border-spacing-y);
 }
 
 .transform {
@@ -734,6 +772,10 @@ video {
 
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 .flex-col {
@@ -804,8 +846,30 @@ video {
   text-wrap: wrap;
 }
 
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
 .border {
   border-width: 1px;
+}
+
+.border-b {
+  border-bottom-width: 1px;
+}
+
+.border-black {
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
+.bg-gray-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+}
+
+.p-0 {
+  padding: 0px;
 }
 
 .p-2 {
@@ -814,6 +878,14 @@ video {
 
 .p-4 {
   padding: 1rem;
+}
+
+.pl-1 {
+  padding-left: 0.25rem;
+}
+
+.pl-2 {
+  padding-left: 0.5rem;
 }
 
 .text-left {
@@ -844,12 +916,28 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-sm {
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-black {
+  --tw-shadow-color: #000;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
 .outline {
   outline-style: solid;
 }
 
 .drop-shadow {
   --tw-drop-shadow: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.drop-shadow-lg {
+  --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
@@ -1014,6 +1102,78 @@ video {
   padding: 0.5rem;
 }
 
+.form {
+  margin: auto;
+  display: flex;
+  width: 75%;
+  flex-direction: column;
+  align-self: center;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  --tw-shadow-color: #000;
+  --tw-shadow: var(--tw-shadow-colored);
+  margin-top: 5vb;
+  margin-bottom: 5vb;
+  border-style: solid;
+  border-width: 1px;
+  height: 65vb;
+}
+
+.form-label {
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+  padding-left: 0.25rem;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .form-label {
+    padding: 0px;
+    text-align: center;
+  }
+}
+
+.form-label {
+  border-style: solid;
+  border-bottom-width: 1px;
+}
+
+.form-input {
+  vertical-align: text-top;
+  border-style: solid;
+  border-color: black;
+  border-bottom-width: 1px;
+  padding: 2px;
+  height: 5%;
+}
+
+.form-input-medium {
+  text-align: start;
+  height: 16.666667%;
+}
+
+.form-input-large {
+  height: 40%;
+}
+
+.form-button {
+  width: 16.666667%;
+  min-width: 13rem;
+  align-self: center;
+  border-radius: 0.5rem;
+  border-style: solid;
+  border-color: black;
+  border-width: 1px;
+  background-color: #8adc5e;
+  margin-top: 2.5vb;
+  min-height: 10px;
+  height: 3vb;
+}
+
 .footer {
   background-color: var(--background-colour);
   place-self: end;
@@ -1041,7 +1201,15 @@ video {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .md\:p-0 {
+    padding: 0px;
+  }
+
   .md\:p-4 {
     padding: 1rem;
+  }
+
+  .md\:text-center {
+    text-align: center;
   }
 }
