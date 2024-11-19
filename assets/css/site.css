@@ -41,15 +41,19 @@
 }
 
 .home-biography {
-    @apply max-sm:hidden flex place-items-center justify-around text-left;
+    @apply hidden md:flex justify-center mt-20;
+}
+
+.home-biography h2 {
+    align-self: center;
 }
 
 .profile-picture {
-    @apply max-sm:hidden max-h-64;
+    @apply max-h-96;
 }
 
 .dashboard {
-    @apply grid grid-cols-1 md:grid-cols-2 gap-4 p-4 overflow-y-scroll;
+    @apply grid grid-cols-1 md:grid-cols-2 gap-4 p-4 overflow-y-scroll md:mt-2;
 }
 
 .dashboard-item {
@@ -57,7 +61,7 @@
     border-color: var(--border-colour);
     border-style: solid;
     border-width: 1px;
-    @apply min-h-40 min-w-60;
+    @apply min-h-32 min-w-60;
 }
 
 .dashboard-item-title {
@@ -73,7 +77,7 @@
     border-color: var(--border-colour);
     border-style: solid;
     border-width: 1px;
-    @apply p-2 min-h-40 min-w-60;
+    @apply p-2 min-h-32 min-w-60;
 }
 
 .footer {
