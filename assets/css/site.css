@@ -99,7 +99,7 @@
 }
 
 .popup {
-    @apply fixed z-20 inset-0 bg-white rounded-lg shadow-lg flex flex-col items-center m-auto max-w-[80%] max-h-[60%] md:max-w-[50%] md:max-h-[50%];
+    @apply fixed z-20 inset-0 bg-white rounded-lg shadow-lg flex flex-col items-center m-auto max-w-[80%] max-h-[75vb] md:max-w-[50%] md:max-h-[50%] overflow-y-scroll;
 }
 
 .popup-title {
@@ -110,11 +110,31 @@
     @apply mb-[10%];
 }
 
+.project-technology-used-title {
+    @apply font-bold;
+    border-bottom: black;
+    border-bottom-width: 1px;
+    border-style: solid;
+}
+
+.project-technology-used-list {
+    @apply flex flex-col flex-wrap 
+           gap-2 px-4
+           justify-start items-center w-[80%] mt-[1%];
+}
+
+.project-technology-used-list p {
+    @apply bg-gray-100 py-1 px-4
+           rounded-full
+           text-sm;
+}
+
 .project-visit-github-link {
     background-color: var(--background-colour);
     width: 100%;
     padding: 1%;
     margin-top: auto;
+    text-align: center;
 }
 
 .form {
