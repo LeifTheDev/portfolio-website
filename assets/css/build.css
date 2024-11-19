@@ -107,7 +107,7 @@
 }
 
 /*
-! tailwindcss v3.4.14 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.15 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -686,6 +686,10 @@ video {
   max-height: 1.25rem;
 }
 
+.max-h-56 {
+  max-height: 14rem;
+}
+
 .max-h-96 {
   max-height: 24rem;
 }
@@ -860,16 +864,20 @@ video {
 
 .border-black {
   --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
 }
 
 .bg-gray-300 {
   --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity, 1));
 }
 
 .p-0 {
   padding: 0px;
+}
+
+.p-1 {
+  padding: 0.25rem;
 }
 
 .p-2 {
@@ -1109,7 +1117,7 @@ video {
   flex-direction: column;
   align-self: center;
   --tw-border-opacity: 1;
-  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+  border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
@@ -1119,13 +1127,13 @@ video {
   margin-bottom: 5vb;
   border-style: solid;
   border-width: 1px;
-  height: 65vb;
+  height: 70vb;
 }
 
 .form-label {
   width: 100%;
   --tw-bg-opacity: 1;
-  background-color: rgb(209 213 219 / var(--tw-bg-opacity));
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity, 1));
   padding-left: 0.25rem;
   font-weight: 600;
 }
@@ -1149,6 +1157,7 @@ video {
   border-bottom-width: 1px;
   padding: 2px;
   height: 5%;
+  min-height: 30px;
 }
 
 .form-input-medium {
@@ -1157,7 +1166,7 @@ video {
 }
 
 .form-input-large {
-  height: 40%;
+  height: 30vb;
 }
 
 .form-button {
@@ -1165,13 +1174,22 @@ video {
   min-width: 13rem;
   align-self: center;
   border-radius: 0.5rem;
+  --tw-shadow-color: #000;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.form-button:hover {
+  border-width: 2px;
+  font-weight: 600;
+}
+
+.form-button {
   border-style: solid;
   border-color: black;
   border-width: 1px;
   background-color: #8adc5e;
-  margin-top: 2.5vb;
-  min-height: 10px;
-  height: 3vb;
+  margin: 5%;
+  min-height: 7.5%;
 }
 
 .footer {
@@ -1182,6 +1200,10 @@ video {
   justify-content: center;
   padding: 1rem;
   text-align: center;
+}
+
+.hover\:font-semibold:hover {
+  font-weight: 600;
 }
 
 @media (min-width: 768px) {

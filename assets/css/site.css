@@ -95,7 +95,7 @@
     margin-bottom: 5vb;
     border-style: solid;
     border-width: 1px;
-    height: 65vb;
+    height: 70vb;
 }
 
 .form-label {
@@ -111,6 +111,7 @@
     border-bottom-width: 1px;
     padding: 2px;
     height: 5%;
+    min-height: 30px;
 }
 
 .form-input-medium {
@@ -119,18 +120,17 @@
 }
 
 .form-input-large {
-    @apply h-2/5;
+    height: 30vb;
 }
 
 .form-button {
-    @apply rounded-lg w-1/6 min-w-52 self-center;
+    @apply rounded-lg w-1/6 min-w-52 self-center shadow-black hover:font-semibold hover:border-2;
     border-style: solid;
     border-color: black;
     border-width: 1px;
     background-color: #8adc5e;
-    margin-top: 2.5vb;
-    min-height: 10px;
-    height: 3vb;
+    margin: 5%;
+    min-height: 7.5%;
 }
 
 .footer {
