@@ -99,7 +99,7 @@
 }
 
 .popup {
-    @apply fixed z-20 inset-0 bg-white rounded-lg shadow-lg flex flex-col items-center m-auto p-2 max-w-[80%] max-h-[60%] md:max-w-[50%] md:max-h-[50%];
+    @apply fixed z-20 inset-0 bg-white rounded-lg shadow-lg flex flex-col items-center m-auto max-w-[80%] max-h-[60%] md:max-w-[50%] md:max-h-[50%];
 }
 
 .popup-title {
@@ -108,6 +108,13 @@
 
 .popup-description {
     @apply mb-[10%];
+}
+
+.project-visit-github-button {
+    background-color: var(--background-colour);
+    width: 100%;
+    padding: 1%;
+    margin-top: auto;
 }
 
 .form {
