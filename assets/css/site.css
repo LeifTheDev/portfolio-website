@@ -10,7 +10,7 @@
 
 .header {
     background-color: var(--background-colour);
-    @apply flex justify-between md:p-4 shadow-lg;
+    @apply flex justify-between md:p-4 shadow-lg fixed w-screen top-0 z-10;
 }
 
 .header h1 {
@@ -36,13 +36,52 @@
 }
 
 .main-content {
-    background-color: var(--content-background);
     min-height: 90vh;
-    @apply p-4;
+    @apply p-4 mt-12;
+}
+
+.home-biography {
+    @apply hidden md:flex justify-center mt-20;
+}
+
+.home-biography h2 {
+    align-self: center;
+}
+
+.profile-picture {
+    @apply max-h-96;
+}
+
+.dashboard {
+    @apply grid grid-cols-1 md:grid-cols-2 gap-4 p-4 overflow-y-scroll md:mt-2;
+}
+
+.dashboard-item {
+    background-color: var(--content-background);
+    border-color: var(--border-colour);
+    border-style: solid;
+    border-width: 1px;
+    @apply min-h-32 min-w-60 hover:shadow-lg drop-shadow-lg;
+}
+
+.dashboard-item-title {
+    background-color: var(--background-colour);
+    border-color: var(--border-colour);
+    border-style: solid;
+    border-width: 1px;
+    @apply p-2 max-w-60;
+}
+
+.dashboard-item-description {
+    background-color: var(--content-background);
+    border-color: var(--border-colour);
+    border-style: solid;
+    border-width: 1px;
+    @apply p-2 min-h-32 min-w-60;
 }
 
 .footer {
     background-color: var(--background-colour);
-    margin-top: -10vh;
-    @apply flex justify-center text-center p-4 bottom-0 w-screen absolute;
+    place-self: end;
+    @apply flex justify-center text-center p-4 w-screen;
 }
