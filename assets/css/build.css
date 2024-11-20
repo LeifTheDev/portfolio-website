@@ -662,6 +662,15 @@ video {
   margin-bottom: -9rem;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mb-\[0\.5vb\] {
+  margin-bottom: 0.5vb;
+}
+
 .mb-\[1\.5rem\] {
   margin-bottom: 1.5rem;
 }
@@ -722,6 +731,10 @@ video {
   height: 1rem;
 }
 
+.h-\[40vb\] {
+  height: 40vb;
+}
+
 .max-h-20 {
   max-height: 5rem;
 }
@@ -778,6 +791,11 @@ video {
   width: 80%;
 }
 
+.w-fit {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
 .w-full {
   width: 100%;
 }
@@ -796,6 +814,10 @@ video {
 
 .max-w-3xl {
   max-width: 48rem;
+}
+
+.max-w-\[60\%\] {
+  max-width: 60%;
 }
 
 .max-w-\[80\%\] {
@@ -842,6 +864,10 @@ video {
 .-scroll-my-36 {
   scroll-margin-top: -9rem;
   scroll-margin-bottom: -9rem;
+}
+
+.list-disc {
+  list-style-type: disc;
 }
 
 .grid-cols-1 {
@@ -940,12 +966,28 @@ video {
   gap: 1rem;
 }
 
+.space-x-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
 .self-center {
   align-self: center;
 }
 
 .justify-self-auto {
   justify-self: auto;
+}
+
+.justify-self-center {
+  justify-self: center;
 }
 
 .overflow-y-scroll {
@@ -1038,6 +1080,14 @@ video {
   padding-bottom: 0.5rem;
 }
 
+.pb-\[2vb\] {
+  padding-bottom: 2vb;
+}
+
+.pl-0 {
+  padding-left: 0px;
+}
+
 .pl-1 {
   padding-left: 0.25rem;
 }
@@ -1046,12 +1096,20 @@ video {
   padding-left: 0.5rem;
 }
 
+.pt-5 {
+  padding-top: 1.25rem;
+}
+
 .text-left {
   text-align: left;
 }
 
 .text-center {
   text-align: center;
+}
+
+.text-start {
+  text-align: start;
 }
 
 .text-2xl {
@@ -1219,8 +1277,105 @@ video {
   align-self: center;
 }
 
+.about-me-biography {
+  margin-top: 5rem;
+  display: flex;
+  height: 40vb;
+  width: 80%;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  .about-me-biography {
+    width: 100%;
+  }
+}
+
+.about-me-biography h2 {
+  align-self: center;
+  text-wrap: wrap;
+}
+
+.about-me h2 {
+  align-self: center;
+  text-wrap: wrap;
+}
+
+.about-me-section {
+  display: flex;
+  flex-direction: column;
+  --tw-bg-opacity: 1;
+  background-color: rgb(209 213 219 / var(--tw-bg-opacity, 1));
+  padding-bottom: 2vb;
+}
+
+@media (min-width: 768px) {
+  .about-me-section {
+    text-align: center;
+  }
+}
+
+.about-me-section {
+  border-top: var(--border-colour);
+  border-top-width: 1px;
+  border-style: solid;
+  min-height: 40vb;
+}
+
+.about-me-section h2 {
+  padding-top: 1.25rem;
+  padding-left: 0.5rem;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .about-me-section h2 {
+    padding-left: 0px;
+  }
+}
+
+.about-me-section p {
+  margin-bottom: 0.5vb;
+  padding-left: 0.5rem;
+  text-align: start;
+}
+
+@media (min-width: 768px) {
+  .about-me-section p {
+    padding-left: 0px;
+    text-align: center;
+  }
+}
+
+.about-me-section ul {
+  margin-left: auto;
+  margin-right: auto;
+  width: -moz-fit-content;
+  width: fit-content;
+  list-style-type: disc;
+}
+
+.about-me-section ul > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
+
+.about-me-section ul {
+  padding-left: 1rem;
+}
+
+.about-me-section li {
+  text-align: left;
+}
+
 .profile-picture {
   max-height: 24rem;
+}
+
+.about-profile-picture {
+  max-width: 60%;
+  border-radius: 9999px;
 }
 
 .dashboard {
@@ -1478,6 +1633,10 @@ video {
     max-height: 50%;
   }
 
+  .md\:w-\[100\%\] {
+    width: 100%;
+  }
+
   .md\:max-w-\[50\%\] {
     max-width: 50%;
   }
@@ -1492,6 +1651,10 @@ video {
 
   .md\:p-4 {
     padding: 1rem;
+  }
+
+  .md\:pl-0 {
+    padding-left: 0px;
   }
 
   .md\:text-center {
