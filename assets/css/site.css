@@ -108,6 +108,7 @@
     @apply min-h-32 min-w-60 drop-shadow-lg;
 }
 
+/* Slightly adjusted tailwind shadow */
 .dashboard-item:hover {
     --tw-shadow: 0 7px 15px -3px rgb(0 0 0 / 0.25),
         0 7px 15px -4px rgb(0 0 0 / 0.25);
@@ -180,6 +181,32 @@
     padding: 1%;
     margin-top: auto;
     text-align: center;
+}
+
+.resume-article {
+    @apply flex flex-col justify-center items-center bg-gray-300 mt-[2.5vb] mb-[2.5vb] shadow-black shadow-md pb-4 w-[80%] m-[10%] rounded-md;
+}
+
+.resume-article h2 {
+    @apply font-extrabold p-4 underline;
+}
+
+.resume-article h3 {
+    @apply font-semibold pt-3 underline;
+}
+
+.resume-article p {
+    @apply pl-4 max-w-[80%] md:max-w-[75%] text-left text-wrap;
+}
+
+.resume-article ul {
+    @apply list-disc space-y-2
+           w-fit mx-auto
+           pl-4;
+}
+
+.note {
+    @apply font-serif;
 }
 
 .form {
