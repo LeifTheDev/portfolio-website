@@ -263,20 +263,28 @@
 }
 
 .mobile-navigation-menu {
-    @apply fixed z-30 h-full w-[80%] bg-white flex flex-col;
+    @apply fixed z-30 h-full w-[70%] bg-white flex flex-col;
 }
 
 .mobile-navigation-page-nav-item {
-    @apply border-black border-solid;
+    @apply border-black border-solid top-0 left-0 pl-2;
     border-width: 1px;
     background-color: var(--background-colour);
-    text-align: center;
 }
 
 .mobile-navigation-page-nav-item-current {
-    @apply border-black border-solid bg-red-500;
+    @apply border-black border-solid bg-red-400 pl-2;
     border-width: 1px;
-    text-align: center;
+}
+
+.mobile-navigation-page-nav-bottom-container {
+    @apply fixed flex flex-col-reverse mt-auto bottom-0 w-[70%];
+}
+
+.mobile-navigation-page-nav-bottom-item {
+    @apply border-black border-solid pl-2;
+    border-width: 1px;
+    background-color: var(--background-colour);
 }
 
 .footer {

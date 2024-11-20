@@ -606,6 +606,10 @@ video {
   bottom: 0px;
 }
 
+.left-0 {
+  left: 0px;
+}
+
 .left-1 {
   left: 0.25rem;
 }
@@ -675,6 +679,10 @@ video {
   margin-right: auto;
 }
 
+.mb-0 {
+  margin-bottom: 0px;
+}
+
 .mb-\[0\.5vb\] {
   margin-bottom: 0.5vb;
 }
@@ -713,6 +721,10 @@ video {
 
 .mt-\[2\.5vb\] {
   margin-top: 2.5vb;
+}
+
+.mt-auto {
+  margin-top: auto;
 }
 
 .block {
@@ -757,6 +769,10 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .max-h-20 {
@@ -809,6 +825,10 @@ video {
 
 .w-8 {
   width: 2rem;
+}
+
+.w-\[70\%\] {
+  width: 70%;
 }
 
 .w-\[80\%\] {
@@ -912,6 +932,10 @@ video {
 
 .flex-col {
   flex-direction: column;
+}
+
+.flex-col-reverse {
+  flex-direction: column-reverse;
 }
 
 .flex-wrap {
@@ -1073,6 +1097,16 @@ video {
 .bg-gray-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(209 213 219 / var(--tw-bg-opacity, 1));
+}
+
+.bg-red-400 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity, 1));
+}
+
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity, 1));
 }
 
 .bg-white {
@@ -1754,19 +1788,21 @@ video {
   z-index: 30;
   display: flex;
   height: 100%;
-  width: 80%;
+  width: 70%;
   flex-direction: column;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
 }
 
 .mobile-navigation-page-nav-item {
+  top: 0px;
+  left: 0px;
   border-style: solid;
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
+  padding-left: 0.5rem;
   border-width: 1px;
   background-color: var(--background-colour);
-  text-align: center;
 }
 
 .mobile-navigation-page-nav-item-current {
@@ -1774,9 +1810,27 @@ video {
   --tw-border-opacity: 1;
   border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
   --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity, 1));
+  background-color: rgb(248 113 113 / var(--tw-bg-opacity, 1));
+  padding-left: 0.5rem;
   border-width: 1px;
-  text-align: center;
+}
+
+.mobile-navigation-page-nav-bottom-container {
+  position: fixed;
+  bottom: 0px;
+  margin-top: auto;
+  display: flex;
+  width: 70%;
+  flex-direction: column-reverse;
+}
+
+.mobile-navigation-page-nav-bottom-item {
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity, 1));
+  padding-left: 0.5rem;
+  border-width: 1px;
+  background-color: var(--background-colour);
 }
 
 .footer {
