@@ -107,7 +107,8 @@
 }
 
 .popup-description {
-    @apply mb-[10%];
+    @apply m-[2.5%] mb-[10%];
+    text-align: center;
 }
 
 .project-technology-used-title {

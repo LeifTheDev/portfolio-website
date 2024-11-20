@@ -634,6 +634,10 @@ video {
   margin: -1.25rem;
 }
 
+.m-\[2\.5\%\] {
+  margin: 2.5%;
+}
+
 .m-auto {
   margin: auto;
 }
@@ -1316,7 +1320,9 @@ video {
 }
 
 .popup-description {
+  margin: 2.5%;
   margin-bottom: 10%;
+  text-align: center;
 }
 
 .project-technology-used-title {
