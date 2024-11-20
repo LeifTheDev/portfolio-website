@@ -12,7 +12,7 @@
 
 <body>
     <header class="header">
-        <img src="./assets/img/bars-solid.svg" alt="Menu" class="menu-icon">
+        <img src="./assets/img/bars-solid.svg" alt="Menu" class="menu-icon" id="menu-icon">
         <h1>Home</h1>
         <nav class="navbar">
             <section>
@@ -30,6 +30,24 @@
         </nav>
     </header>
     <main class="main-content">
+        <section class="dark-background" id="mobile-navigation-dark-background" hidden>
+            <h2 hidden>Dark Background</h2>
+        </section>
+        <section hidden id="mobile-navigation-menu">
+            <h2 hidden>Mobile Navigation Menu</h2>
+            <a href="./index.html" class="mobile-navigation-page-nav-item">Home</a>
+            <a href="./about.html" class="mobile-navigation-page-nav-item">About Me</a>
+            <a href="./resume.html" class="mobile-navigation-page-nav-item-current">Resume</a>
+            <a href="./projects.html" class="mobile-navigation-page-nav-item">Projects</a>
+            <a href="./contact.html" class="mobile-navigation-page-nav-item">Contact Form</a>
+            <a href="./sample_project.html" class="mobile-navigation-page-nav-item">Sample Project</a>
+            <section class="mobile-navigation-page-nav-bottom-container">
+                <h2 hidden>Bottom navigation Items</h2>
+                <a href="https://github.com/LB-TAFE" class="mobile-navigation-page-nav-bottom-item">My Github</a>
+                <a href="https://au.linkedin.com/in/leif-bayley" class="mobile-navigation-page-nav-bottom-item">My
+                    LinkedIn</a>
+            </section>
+        </section>
         <article class="resume-article">
             <h2>Education</h2>
             <h3>IGCSE's</h3>
@@ -86,6 +104,7 @@
         <p>&copy; Leif, 2024 </p>
     </footer>
     <script src="./assets/js/resume_scripts.js"></script>
+    <script src="./assets/js/mobile_navigation.js"></script>
 </body>
 
 </html>
