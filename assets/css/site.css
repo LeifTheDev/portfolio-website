@@ -48,8 +48,52 @@
     align-self: center;
 }
 
+.about-me-biography {
+    @apply flex justify-center mt-20 h-[40vb] w-[80%] md:w-[100%];
+}
+
+.about-me-biography h2 {
+    align-self: center;
+    @apply text-wrap;
+}
+
+.about-me h2 {
+    align-self: center;
+    @apply text-wrap;
+}
+
+.about-me-section {
+    @apply flex flex-col md:text-center bg-gray-300 pb-[2vb];
+    border-top: var(--border-colour);
+    border-top-width: 1px;
+    border-style: solid;
+    min-height: 40vb;
+}
+
+.about-me-section h2 {
+    @apply font-semibold pt-5 pl-2 md:pl-0;
+}
+
+.about-me-section p {
+    @apply pl-2 md:pl-0 text-start md:text-center mb-[0.5vb];
+}
+
+.about-me-section ul {
+    @apply list-disc space-y-2
+           w-fit mx-auto
+           pl-4;
+}
+
+.about-me-section li {
+    @apply text-left;
+}
+
 .profile-picture {
     @apply max-h-96;
+}
+
+.about-profile-picture {
+    @apply max-w-[60%] rounded-full;
 }
 
 .dashboard {
