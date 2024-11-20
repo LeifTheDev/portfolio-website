@@ -140,6 +140,15 @@
     position: fixed;
     width: 100%;
     height: 100%;
+    z-index: 30;
+}
+
+.dark-background-low {
+    background: black;
+    opacity: 75%;
+    position: fixed;
+    width: 100%;
+    height: 100%;
     z-index: 10;
 }
 
@@ -251,6 +260,23 @@
     background-color: #8adc5e;
     margin: 5%;
     min-height: 7.5%;
+}
+
+.mobile-navigation-menu {
+    @apply fixed z-30 h-full w-[80%] bg-white flex flex-col;
+}
+
+.mobile-navigation-page-nav-item {
+    @apply border-black border-solid;
+    border-width: 1px;
+    background-color: var(--background-colour);
+    text-align: center;
+}
+
+.mobile-navigation-page-nav-item-current {
+    @apply border-black border-solid bg-red-500;
+    border-width: 1px;
+    text-align: center;
 }
 
 .footer {

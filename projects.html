@@ -12,7 +12,7 @@
 
 <body>
     <header class="header">
-        <img src="./assets/img/bars-solid.svg" alt="Menu" class="menu-icon">
+        <img src="./assets/img/bars-solid.svg" alt="Menu" class="menu-icon" id="menu-icon">
         <h1>Home</h1>
         <nav class="navbar">
             <section>
@@ -30,10 +30,23 @@
         </nav>
     </header>
     <main class="main-content">
-        <section class="dark-background" id="dark-background" hidden>
-            <h2 hidden>Dark Background Container</h2>
+        <section class="dark-background-low" id="dark-background" hidden>
+            <h2 hidden>Dark Background</h2>
+        </section>
+        <section class="dark-background" id="mobile-navigation-dark-background" hidden>
+            <h2 hidden>Dark Background</h2>
+        </section>
+        <section hidden id="mobile-navigation-menu">
+            <h2 hidden>Mobile Navigation Menu</h2>
+            <a href="./index.html" class="mobile-navigation-page-nav-item">Home</a>
+            <a href="./about.html" class="mobile-navigation-page-nav-item">About Me</a>
+            <a href="./resume.html" class="mobile-navigation-page-nav-item">Resume</a>
+            <a href="./projects.html" class="mobile-navigation-page-nav-item-current">Projects</a>
+            <a href="./contact.html" class="mobile-navigation-page-nav-item">Contact Form</a>
+            <a href="./sample_project.html" class="mobile-navigation-page-nav-item">Sample Project</a>
         </section>
         <section id="popup-container" hidden>
+            <h2 hidden>Popup Container</h2>
             <article class="popup" id="popup">
                 <h2 class="popup-title" id="popup-title">Title
                 </h2>
@@ -89,6 +102,7 @@
         <p>&copy; Leif, 2024 </p>
     </footer>
     <script src="./assets/js/projects_scripts.js"></script>
+    <script src="./assets/js/mobile_navigation.js"></script>
 </body>
 
 </html>
